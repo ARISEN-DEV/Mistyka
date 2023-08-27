@@ -1,0 +1,196 @@
+---
+import Footer from "../Footer.astro";
+import Datepicker from "./Datepicker.astro";
+import ButtonPay from "../ButtonPay";
+---
+
+<section class="pt-32 h-screen">
+    <div class="px-5 py-10">
+        <div class="w-full">
+            <div class="-mx-3 md:flex items-start">
+                <div
+                    class="px-3 md:w-7/12 lg:pr-10 animate__animated animate__fadeInLeft"
+                >
+                    <div
+                        class="w-full mx-auto text-white font-light mb-6 border-b border-gray-200 pb-6"
+                    >
+                        <div class="w-full flex items-center">
+                            <div
+                                class="overflow-hidden rounded-lg w-16 h-16 bg-gray-50 border border-gray-200"
+                            >
+                                <img src="/cabin3.webp" alt="PROMO" />
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h6
+                                    class="font-semibold uppercase text-gray-200"
+                                >
+                                    PACK RELAX MENTAL 2 NOCHES
+                                </h6>
+
+                                <p class="text-gray-400">x 1</p>
+                            </div>
+                            <div>
+                                <span
+                                    class="font-semibold text-gray-200 text-xl"
+                                    >$79</span
+                                ><span
+                                    class="font-semibold text-gray-200 text-sm"
+                                    >.00</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-6 pb-6 border-b border-gray-200 text-white">
+                        <div class="w-full flex mb-3 items-center">
+                            <div class="flex-grow">
+                                <span class="text-gray-200">Subtotal</span>
+                            </div>
+                            <div class="pl-3">
+                                <span class="font-semibold">$79.00</span>
+                            </div>
+                        </div>
+                        <div class="w-full flex items-center">
+                            <div class="flex-grow">
+                                <span class="text-gray-200"
+                                    >Impuestos (IVA)</span
+                                >
+                            </div>
+                            <div class="pl-3">
+                                <span class="font-semibold">$20.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="mb-6 pb-4 border-b border-gray-200 md:border-none text-white text-xl"
+                    >
+                        <div class="w-full flex items-center">
+                            <div class="flex-grow">
+                                <span class="text-gray-200">Total</span>
+                            </div>
+                            <div class="pl-3">
+                                <span
+                                    class="font-semibold text-gray-400 text-sm"
+                                    >USD</span
+                                >
+                                <span class="font-semibold">$99.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-white grid gap-3">
+                        <span>Check in:</span>
+                        <Datepicker />
+                    </div>
+                </div>
+                <div class="px-3 md:w-5/12">
+                    <div
+                        class="w-full mx-auto rounded-lg border border-gray-200 text-white font-light mb-6"
+                    >
+                        <div class="w-full p-3 border-b border-gray-200">
+                            <div class="mb-5">
+                                <label
+                                    for="type1"
+                                    class="flex items-center cursor-pointer"
+                                >
+                                    <input
+                                        type="radio"
+                                        class="form-radio text-blue-500"
+                                        name="type"
+                                        id="type1"
+                                        checked
+                                    />
+                                    <img
+                                        src="https://leadershipmemphis.org/wp-content/uploads/2020/08/780370.png"
+                                        class="h-6 ml-3"
+                                    />
+                                </label>
+                            </div>
+                            <div>
+                                <div class="mb-3">
+                                    <label
+                                        class="text-gray-200 font-semibold text-sm mb-2 ml-1"
+                                        >Nombre Completo</label
+                                    >
+                                    <div>
+                                        <input
+                                            class="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 transition-colors text-black bg-slate-100 placeholder-slate-800"
+                                            placeholder="John Smith"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label
+                                        class="text-gray-200 font-semibold text-sm mb-2 ml-1"
+                                        >Número de Tarjeta</label
+                                    >
+                                    <div>
+                                        <input
+                                            class="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 transition-colors text-black bg-slate-100 placeholder-slate-800"
+                                            placeholder="0000 0000 0000 0000"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="mb-3 -mx-2 flex items-end">
+                                    <div class="px-2 w-1/4">
+                                        <label
+                                            class="text-gray-200 font-semibold text-sm mb-2 ml-1"
+                                            >Datos</label
+                                        >
+                                        <input
+                                            class="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 transition-colors text-black bg-slate-100 placeholder-slate-800"
+                                            placeholder="MES"
+                                            type="text"
+                                        />
+                                    </div>
+                                    <div class="px-2 w-1/4">
+                                        <input
+                                            class="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 transition-colors text-black bg-slate-100 placeholder-slate-800"
+                                            placeholder="ANO"
+                                            type="text"
+                                        />
+                                    </div>
+                                    <div class="px-2 w-1/4">
+                                        <label
+                                            class="text-gray-200 font-semibold text-sm mb-2 ml-1"
+                                            >Código</label
+                                        >
+                                        <div>
+                                            <input
+                                                class="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 transition-colors text-black bg-slate-100 placeholder-slate-800"
+                                                placeholder="CVV"
+                                                type="text"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full p-3">
+                            <label
+                                for="type2"
+                                class="flex items-center cursor-pointer"
+                            >
+                                <input
+                                    type="radio"
+                                    class="form-radio text-blue-500"
+                                    name="type"
+                                    id="type2"
+                                />
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+                                    width="80"
+                                    class="ml-3"
+                                />
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <ButtonPay client:load />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <Footer />
+</section>

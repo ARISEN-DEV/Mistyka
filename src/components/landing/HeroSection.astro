@@ -1,0 +1,27 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Encontrá aquí el descanso que tu mente y cuerpo necesitan"
+  subtitle="Disfrutá de la experiencia mistica"
+  color="white"
+  id=""
+>
+  <div slot="footer">
+    <a
+      class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors "
+      href="#main"
+    >
+    Conocé nuestra propuesta</a
+    >
+  </div>
+
+  <video
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    autoplay
+    muted
+    loop
+    src="/bgvideo.mp4"></video>
+</Section>

@@ -1,0 +1,63 @@
+---
+import ReserveBtn from "../ReserveBtn.astro";
+---
+
+<div
+  class="landing-section bg-black overflow-hidden relative p-10 pt-28 bg-gradient-to-b from-black to-slate-950 py-20 lg:text-left text-center"
+  id="main"
+>
+  <div
+    class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center"
+  >
+    <div class="lg:col-start-2">
+      <h4
+        class="text-2xl font-extrabold tracking-tight text-white"
+      >
+      "Un hotel donde la magia y la realidad convergen en un abrazo místico."
+      </h4>
+      <ul class="mt-10">
+        <li>
+          <div class="flex">
+            <div>
+              <h5 class="text-lg font-bold text-white">
+                Una cabaña que te reconecta al mundo
+              </h5>
+              <p class="mt-2 text-base text-gray-300">
+                Sumérgete en un paraíso de tranquilidad y opulencia donde la naturaleza se une al lujo. Disfruta de nuestras amenidades en un espacio de diseño rustico con toques contemporáneos.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="mt-10">
+          <div class="flex">
+            <div>
+              <h5
+                class="text-lg font-bold leading-6 text-white"
+              >
+                Sientete como en tu casa
+              </h5>
+              <p
+                class="mt-2 text-base leading-6 text-gray-300"
+              >
+                El corazón de nuestra experiencia te espera en el edificio
+                central, donde la opulencia se encuentra con la relajación.
+                Disfruta de instalaciones como el spa y el gimnasio, y sumérgete
+                en la elegancia moderna y la calidez clásica que definen nuestro
+                espacio.
+              </p>
+            </div>
+          </div>
+          <ReserveBtn />
+        </li>
+        <li class="mt-10"></li>
+      </ul>
+    </div>
+    <div class="relative mt-10 -mx-4 md:-mx-12 lg:mt-0 lg:col-start-">
+      <img
+        src="heroImage.webp"
+        alt=""
+        class="relative h-80 rounded-2xl mx-auto ring-1 ring-gray-400 shadow-lg shadow-slate-700"
+      />
+    </div>
+  </div>
+</div>
