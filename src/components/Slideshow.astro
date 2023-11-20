@@ -1,6 +1,22 @@
 <div
-  class="slideshow touch-pan-x p-10 py-32 flex flex-nowrap overflow-x-auto gap-10 bg-slate-950"
-id="servicios">
+  class="slideshow touch-pan-x p-10 my-32 flex flex-nowrap overflow-x-auto gap-10 "
+  id="servicios"
+>
+  <img
+    src="cabin.webp"
+    alt="Cinque Terre"
+    class="w-80 h-80 hover:scale-105 duration-500 rounded-md ring-1 ring-gray-400 lg:opacity-80 hover:opacity-100"
+  />
+  <img
+    src="cabin2.webp"
+    alt="Cinque Terre"
+    class="w-80 h-80 hover:scale-105 duration-500 rounded-md ring-1 ring-gray-400 lg:opacity-80 hover:opacity-100"
+  />
+  <img
+    src="cabin3.webp"
+    alt="Cinque Terre"
+    class="w-80 h-80 hover:scale-105 duration-500 rounded-md ring-1 ring-gray-400 lg:opacity-80 hover:opacity-100"
+  />
   <img
     src="dor1.webp"
     alt="Cinque Terre"
@@ -74,7 +90,14 @@ id="servicios">
 </div>
 
 <style>
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .slideshow::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
   .slideshow {
-    scrollbar-width: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 </style>
